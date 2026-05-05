@@ -1,0 +1,166 @@
+\setcounter{chapter}{3}
+\chapter{Bậc phản ứng}
+
+\section{Tiến hành thí nghiệm}
+
+\subsection{Xác định bậc phản ứng của \(\ce{Na2S2O3}\)}
+
+\subsubsection{Kết quả thí nghiệm}
+\begin{center}
+    \renewcommand{\arraystretch}{1.25}
+    \begin{tabular}{|C{0.07\textwidth}|C{0.15\textwidth}|C{0.15\textwidth}|C{0.13\textwidth}|C{0.13\textwidth}|C{0.14\textwidth}|}
+        \hline
+        \multirow{2}{*}{\textbf{TN}} & \multicolumn{2}{c|}{\shortstack{\textbf{Nồng độ ban đầu}\\\textbf{(\(M\))}}} & \multirow{2}{*}{\shortstack{$\Delta t_1$\\(s)}} & \multirow{2}{*}{\shortstack{$\Delta t_2$\\(s)}} & \multirow{2}{*}{\shortstack{$\Delta t_{\mathrm{TB}}$\\(s)}} \\
+        \cline{2-3}
+        & \(\ce{Na2S2O3}\) & \(\ce{H2SO4}\) &  &  &  \\ \hline
+        1 & 0,01 & 0,08 & 127 & 123 & 125 \\ \hline
+        2 & 0,02 & 0,08 & 53 & 57 & 55 \\ \hline
+        3 & 0,04 & 0,08 & 26 & 22 & 24 \\ \hline
+    \end{tabular}
+\end{center}
+
+\subsubsection{Nồng độ ban đầu của \(\ce{Na2S2O3}\) và \(\ce{H2SO4}\)}
+\begin{itemize}
+    \item Thể tích dung dịch: \begin{equation}
+        V_{dd} = V_{\ce{H2SO4}} + V_{\ce{Na2S2O3}} + V_{\ce{H2O}} = 40 (\si{\milli\liter}) = 0,04 (\si{\liter})
+    \end{equation}
+    \item Nồng độ dung dịch: \begin{equation}
+        C_M(M) = \frac{n (\si{\mole})}{V_{dd}(\si{\liter})}
+    \end{equation}
+    \begin{itemize}
+        \item Nồng độ ban đầu của \ce{Na2S2O3}:
+        \begin{equation}
+            \left\{
+            \begin{aligned}
+                C_{M_{\ce{Na2S2O3}},1} = \frac{n_{\ce{Na2S2O3}, 1}}{V_{dd}} = \frac{0,1 \cdot 4\cdot 10^{-3}}{0,04} = 0.01 (M) \\
+                C_{M_{\ce{Na2S2O3}},2} = \frac{n_{\ce{Na2S2O3}, 2}}{V_{dd}} = \frac{0,1 \cdot 8\cdot 10^{-3}}{0,04} = 0.02 (M) \\
+                C_{M_{\ce{Na2S2O3}},3} = \frac{n_{\ce{Na2S2O3}, 3}}{V_{dd}} = \frac{0,1 \cdot 16\cdot 10^{-3}}{0,04} = 0.04 (M)
+            \end{aligned}
+            \right.
+        \end{equation}
+        \item Nồng độ ban đầu của \ce{H2SO4}
+        \begin{equation}
+            C_{M_{\ce{H2SO4}}} = \frac{n_{\ce{H2SO4}}}{V_{dd}} = \frac{0,4 \cdot 8 \cdot 10^{-3}}{0,04} = 0,08 (M)
+        \end{equation}
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Kết luận bậc phản ứng theo \(\ce{Na2S2O3}\)}
+Gọi \(\mathcal{M}\) là bậc phản ứng theo \ce{Na2S2O3}. \\
+Từ $\Delta t_{\mathrm{TB}}$ của TN1, TN2 và TN3, ta có:
+\begin{equation}
+    \left\{
+    \begin{aligned}
+        \mathcal{M}_1 &= \frac{\log\left(\dfrac{\Delta t_{\mathrm{TB},1}}{\Delta t_{\mathrm{TB},2}}\right)}{\log(2)} = \frac{\log\left(\dfrac{125}{55}\right)}{\log(2)} = 1{,}184 \\
+        \mathcal{M}_2 &= \frac{\log\left(\dfrac{\Delta t_{\mathrm{TB},2}}{\Delta t_{\mathrm{TB},3}}\right)}{\log(2)} = \frac{\log\left(\dfrac{55}{24}\right)}{\log(2)} = 1{,}196
+    \end{aligned}
+    \right.
+\end{equation}
+
+Bậc phản ứng theo \ce{Na2S2O3}:
+\begin{equation}
+    \mathcal{M} = \frac{\mathcal{M}_1 + \mathcal{M}_2}{2} = \frac{1{,}184 + 1{,}196}{2} = 1{,}190
+\end{equation}
+
+\subsection{Xác định bậc phản ứng của \(\ce{H2SO4}\)}
+
+\subsubsection{Kết quả thí nghiệm}
+\begin{center}
+    \renewcommand{\arraystretch}{1.25}
+    \begin{tabular}{|C{0.07\textwidth}|C{0.15\textwidth}|C{0.15\textwidth}|C{0.13\textwidth}|C{0.13\textwidth}|C{0.14\textwidth}|}
+        \hline
+        \multirow{2}{*}{\textbf{TN}} & \multicolumn{2}{c|}{\shortstack{\textbf{Nồng độ ban đầu}\\\textbf{(\(M\))}}} & \multirow{2}{*}{\shortstack{$\Delta t_1$\\(s)}} & \multirow{2}{*}{\shortstack{$\Delta t_2$\\(s)}} & \multirow{2}{*}{\shortstack{$\Delta t_{\mathrm{TB}}$\\(s)}} \\
+        \cline{2-3}
+        & \(\ce{Na2S2O3}\) & \(\ce{H2SO4}\) &  &  &  \\ \hline
+        1 & 0,02 & 0,04 & 60 & 61 & 60,5 \\ \hline
+        2 & 0,02 & 0,08 & 51 & 49 & 50,0 \\ \hline
+        3 & 0,02 & 0,16 & \textit{47} & \textit{46} & 46,5 \\ \hline
+    \end{tabular}
+\end{center}
+
+\subsubsection{Nồng độ ban đầu của \(\ce{Na2S2O3}\) và \(\ce{H2SO4}\)}
+\begin{itemize}
+    \item Thể tích dung dịch: \begin{equation}
+        V_{dd} = V_{\ce{H2SO4}} + V_{\ce{Na2S2O3}} + V_{\ce{H2O}} = 40 (\si{\milli\liter}) = 0,04 (\si{\liter})
+    \end{equation}
+    \item Nồng độ dung dịch: \begin{equation}
+        C_M(M) = \frac{n (\si{\mole})}{V_{dd}(\si{\liter})}
+    \end{equation}
+    \begin{itemize}
+        \item Nồng độ ban đầu của \ce{Na2S2O3}:
+        \begin{equation}
+            C_{M_{\ce{Na2S2O3}}} = \frac{n_{\ce{Na2S2O3}}}{V_{dd}} = \frac{0,1 \cdot 8\cdot 10^{-3}}{0,04} = 0,02 (M)
+        \end{equation}
+        \item Nồng độ ban đầu của \ce{H2SO4}:
+        \begin{equation}
+            \left\{
+            \begin{aligned}
+                C_{M_{\ce{H2SO4}},1} &= \frac{n_{\ce{H2SO4}, 1}}{V_{dd}} = \frac{0,4 \cdot 4\cdot 10^{-3}}{0,04} = 0,04 (M) \\
+                C_{M_{\ce{H2SO4}},2} &= \frac{n_{\ce{H2SO4}, 2}}{V_{dd}} = \frac{0,4 \cdot 8\cdot 10^{-3}}{0,04} = 0,08 (M) \\
+                C_{M_{\ce{H2SO4}},3} &= \frac{n_{\ce{H2SO4}, 3}}{V_{dd}} = \frac{0,4 \cdot 16\cdot 10^{-3}}{0,04} = 0,16 (M)
+            \end{aligned}
+            \right.
+        \end{equation}
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Kết luận bậc phản ứng theo \(\ce{H2SO4}\)}
+Gọi \(\mathcal{N}\) là bậc phản ứng theo \ce{H2SO4}. \\
+Từ $\Delta t_{\mathrm{TB}}$ của TN1, TN2 và TN3, ta có:
+\begin{equation}
+    \left\{
+    \begin{aligned}
+        \mathcal{N}_1 &= \frac{\log\left(\dfrac{\Delta t_{\mathrm{TB},1}}{\Delta t_{\mathrm{TB},2}}\right)}{\log(2)} = \frac{\log\left(\dfrac{60,5}{50}\right)}{\log(2)} = 0,275 \\
+        \mathcal{N}_2 &= \frac{\log\left(\dfrac{\Delta t_{\mathrm{TB},2}}{\Delta t_{\mathrm{TB},3}}\right)}{\log(2)} = \frac{\log\left(\dfrac{50}{46,5}\right)}{\log(2)} = 0,105
+    \end{aligned}
+    \right.
+\end{equation}
+
+Bậc phản ứng theo \ce{H2SO4}:
+\begin{equation}
+    \mathcal{N} = \frac{\mathcal{N}_1 + \mathcal{N}_2}{2} = \frac{0,275 + 0,105}{2} = 0,190
+\end{equation}
+
+\subsubsection{Kết luận bậc tổng cộng của phản ứng}
+Gọi \(\mathcal{K}\) là bậc tổng cộng của phản ứng. Khi đó:
+\begin{equation}
+    \boxed{\mathcal{K} = \mathcal{M} + \mathcal{N} = 1{,}190 + 0{,}190 = 1{,}380}
+\end{equation}
+
+\section{Trả lời câu hỏi}
+
+\begin{enumerate}
+    \item \textbf{Trong thí nghiệm trên, nồng độ của \ce{Na2S2O3} và \ce{H2SO4} ảnh hưởng thế nào đến vận tốc phản ứng? Viết biểu thức vận tốc và xác định \mbox{bậc phản ứng.}}
+
+        Từ kết quả thí nghiệm, có thể thấy nồng độ của \ce{Na2S2O3} ảnh hưởng rõ rệt đến vận tốc phản ứng: khi nồng độ \ce{Na2S2O3} tăng, thời gian phản ứng giảm mạnh nên vận tốc tăng lên đáng kể. Trong khi đó, nồng độ của \ce{H2SO4} chỉ ảnh hưởng rất ít đến vận tốc phản ứng.
+
+        Biểu thức vận tốc phản ứng được viết dưới dạng:
+        \begin{equation}
+            v = k[\ce{Na2S2O3}]^{\mathcal{M}}[\ce{H2SO4}]^{\mathcal{N}}
+        \end{equation}
+
+        Với số liệu đã tính được trong bài:
+        \begin{equation}
+            \mathcal{M} = 1,190, \qquad \mathcal{N} = 0,190, \qquad \mathcal{K} = \mathcal{M} + \mathcal{N} = 1,380
+        \end{equation}
+
+        Như vậy, phản ứng có bậc xấp xỉ bậc nhất theo \ce{Na2S2O3}, gần bậc không theo \ce{H2SO4}, và bậc tổng cộng bằng \(1,380\).
+
+    \item \textbf{Cơ chế phản ứng có thể được viết như sau: \(\ce{H2SO4 + Na2S2O3 -> Na2SO4 + H2S2O3}\) (1), \(\ce{H2S2O3 -> H2SO3 + S}\) (2). Dựa vào kết quả thí nghiệm, phản ứng nào được xem là bước quyết định \mbox{vận tốc? Tại sao?}}
+
+        Dựa vào kết quả thí nghiệm, có thể suy luận rằng phản ứng \((2)\) là bước chậm, tức là bước quyết định vận tốc phản ứng. Lý do là phản ứng \((1)\) chỉ là phản ứng trao đổi ion nên thường xảy ra rất nhanh, còn phản ứng \((2)\) là quá trình phân hủy -- tự oxi hóa khử của \ce{H2S2O3} nên diễn ra chậm hơn.
+
+        Ngoài ra, trong các thí nghiệm trên, \ce{H2SO4} luôn dư so với \ce{Na2S2O3}. Việc thay đổi nồng độ \ce{Na2S2O3} làm vận tốc thay đổi mạnh, còn thay đổi nồng độ \ce{H2SO4} chỉ ảnh hưởng rất ít. Điều đó cũng cho thấy bước chậm chủ yếu gắn với sự biến đổi của hệ chứa lưu huỳnh, phù hợp với việc phản ứng \((2)\) là bước quyết định vận tốc.
+
+    \item \textbf{Dựa trên phương pháp thí nghiệm, vận tốc xác định được trong các thí nghiệm trên là vận tốc trung bình hay \mbox{vận tốc tức thời?}}
+
+        Về bản chất, vận tốc được xác định từ thương số giữa độ biến thiên nồng độ và khoảng thời gian đo được nên đó là vận tốc trung bình trong khoảng thời gian \(\Delta t\).
+
+        Tuy nhiên, trong phương pháp này người ta đo thời gian để hệ đạt đến cùng một mức độ vẩn đục, tức là lượng lưu huỳnh tạo thành đến thời điểm quan sát là gần như như nhau giữa các lần thí nghiệm. Vì \(\Delta C\) rất nhỏ nên giá trị vận tốc trung bình đó thường được dùng để xấp xỉ vận tốc ban đầu, hay gần đúng với vận tốc tức thời của phản ứng.
+
+    \item \textbf{Nếu thay đổi thứ tự cho \ce{H2SO4} và \ce{Na2S2O3} thì bậc phản ứng có \mbox{thay đổi hay không? Tại sao?}}
+
+        Bậc phản ứng không thay đổi nếu chỉ thay đổi thứ tự cho các chất phản ứng tiếp xúc với nhau mà vẫn giữ nguyên các điều kiện thí nghiệm khác. Bậc phản ứng là đại lượng thực nghiệm phụ thuộc vào cơ chế phản ứng và điều kiện tiến hành, chứ không phụ thuộc vào việc rót \ce{H2SO4} trước hay \ce{Na2S2O3} trước.
+
+        Vì vậy, thay đổi thứ tự trộn hai dung dịch không làm thay đổi biểu thức vận tốc cũng như bậc phản ứng đã xác định.
+\end{enumerate}

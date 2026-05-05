@@ -1,0 +1,205 @@
+\setcounter{chapter}{7}
+\chapter{Phân tích thể tích}
+
+\section{Tiến hành thí nghiệm}
+
+\subsection{Thí nghiệm 1: Xây dựng đường cong chuẩn độ acid mạnh bằng base mạnh}
+
+\subsubsection{Đồ thị đường cong chuẩn độ}
+\begin{figure}[H]
+    \centering
+    \input{chapters/plots/hcl_naoh_curve_plot}
+    \caption{Đường cong chuẩn độ \ce{HCl} bằng \ce{NaOH} được dựng từ bảng số liệu.}
+    \label{fig:duong-cong-chuan-do-hcl-naoh}
+\end{figure}
+
+\subsubsection{Xác định tiếp tuyến, bước nhảy pH và pH tương đương trên đồ thị}
+    \begin{itemize}
+        \item \textbf{Bước nhảy \(\mathbf{pH}\):}  \(3,36 \to 10,56\)
+        \item \textbf{Điểm \(\mathbf{pH}\) tương đương:} \(7\)
+    \end{itemize}
+
+\subsection{Thí nghiệm 2: Chuẩn độ \(\ce{HCl}\) với \PhenolphthaleinWord}
+    \subsubsection{Màu chỉ thị thay đổi:}
+        \begin{center}
+        \textit{Trong suốt thành \LightPinkWord}
+        \end{center}
+    \subsubsection{Kết quả thí nghiệm}
+        \begin{center}
+            \renewcommand{\arraystretch}{1.3}
+            \begin{tabular}{|C{0.09\textwidth}|C{0.14\textwidth}|C{0.14\textwidth}|C{0.14\textwidth}|C{0.14\textwidth}|C{0.14\textwidth}|}
+                \hline
+                \textbf{Lần} & \shortstack{\(V_{\ce{HCl}}\)\\(mL)} & \shortstack{\(V_{\ce{NaOH}}\)\\(mL)} & \shortstack{\(C_{\ce{NaOH}}\)\\(N)} & \shortstack{\(C_{\ce{HCl}}\)\\(N)} & \textbf{Sai số} \\ \hline
+                \textbf{1} & 10 & 10,80 & 0,1 & 0,1080 & 0,0000 \\ \hline
+                \textbf{2} & 10 & 10,75 & 0,1 & 0,1075 & 0,0005 \\ \hline
+                \textbf{3} & 10 & 10,85 & 0,1 & 0,1085 & 0,0005 \\ \hline
+            \end{tabular}
+        \end{center}
+    \subsubsection{Nồng độ dung dịch \ce{HCl}}
+        \begin{equation}
+            C_{\ce{HCl}} \cdot V_{\ce{HCl}} = C_{\ce{NaOH}} \cdot V_{\ce{NaOH}}
+        \end{equation}
+        \begin{equation}
+            \left\{
+            \begin{aligned}
+                C_{\ce{HCl}, 1} = \frac{C_{\ce{NaOH}} \cdot V_{\ce{NaOH}, 1}}{V_{\ce{HCl}}} = \frac{0,1 \cdot 10,80}{10} = 0,1080N \\
+                C_{\ce{HCl}, 2} = \frac{C_{\ce{NaOH}} \cdot V_{\ce{NaOH}, 2}}{V_{\ce{HCl}}} = \frac{0,1 \cdot 10,75}{10} = 0,1075N \\
+                C_{\ce{HCl}, 3} = \frac{C_{\ce{NaOH}} \cdot V_{\ce{NaOH}, 3}}{V_{\ce{HCl}}} = \frac{0,1 \cdot 10,85}{10} = 0,1085N
+            \end{aligned}
+            \right.
+        \end{equation}
+    \subsubsection{Tính toán sai số}
+        \begin{equation}
+            \overline{C_{\ce{HCl}}} = \frac{C_{\ce{HCl}, 1} + C_{\ce{HCl}, 2} + C_{\ce{HCl}, 3}}{3} = \frac{0,1080 + 0,1075 + 0,1085}{3} = 0,1080N
+        \end{equation}
+        \begin{equation}
+            \left\{
+            \begin{aligned}
+                \Delta C_{\ce{HCl}, 1} = |\overline{C_{\ce{HCl}}} - C_{\ce{HCl}, 1}| = |0,1080 - 0,1080| = 0,0000 \\
+                \Delta C_{\ce{HCl}, 2} = |\overline{C_{\ce{HCl}}} - C_{\ce{HCl}, 2}| = |0,1080 - 0,1075| = 0,0005 \\
+                \Delta C_{\ce{HCl}, 3} = |\overline{C_{\ce{HCl}}} - C_{\ce{HCl}, 3}| = |0,1080 - 0,1085| = 0,0005
+            \end{aligned}
+            \right.
+        \end{equation}
+        \begin{equation}
+            \overline{\Delta C_{\ce{HCl}}} = \frac{\Delta C_{\ce{HCl}, 1} + \Delta C_{\ce{HCl}, 2} + \Delta C_{\ce{HCl}, 3}}{3} = \frac{0,0000 + 0,0005 + 0,0005}{3} = 0,00033
+        \end{equation}
+    \subsubsection{Kết luận:}
+    \begin{center}
+        Chỉ thị phù hợp với phép chuẩn độ acid mạnh - base mạnh là \textbf{\PhenolphthaleinWord}.
+    \end{center}
+    Nồng độ dung dịch \(\ce{HCl}\) cần dùng:
+    \begin{equation}
+        C_{\ce{HCl}} = \overline{C_{\ce{HCl}}} \pm \overline{\Delta C_{\ce{HCl}}} = (0,1080 \pm 0,0003)\,N
+    \end{equation}
+
+% \subsection{Thí nghiệm 3: Chuẩn độ \(\ce{HCl}\) với Methyl orange}
+
+\subsection{Thí nghiệm 4a: Chuẩn độ \(\ce{CH3COOH}\) với \PhenolphthaleinWord}
+    \subsubsection{Màu chỉ thị thay đổi:}
+        \begin{center}
+        \textit{Trong suốt thành \LightPinkWord}
+        \end{center}
+    \subsubsection{Kết quả thí nghiệm}
+        \begin{center}
+            \renewcommand{\arraystretch}{1.3}
+            \begin{tabular}{|C{0.09\textwidth}|C{0.14\textwidth}|C{0.14\textwidth}|C{0.14\textwidth}|C{0.14\textwidth}|C{0.14\textwidth}|}
+                \hline
+                \textbf{Lần} & \shortstack{\(V_{\ce{CH3COOH}}\)\\(mL)} & \shortstack{\(V_{\ce{NaOH}}\)\\(mL)} & \shortstack{\(C_{\ce{NaOH}}\)\\(N)} & \shortstack{\(C_{\ce{CH3COOH}}\)\\(N)} & \textbf{Sai số} \\ \hline
+                \textbf{1} & 10 & 8,75 & 0,1 & 0,0875 & 0,0000 \\ \hline
+                \textbf{2} & 10 & 8,70 & 0,1 & 0,0870 & 0,0005 \\ \hline
+                \textbf{3} & 10 & 8,80 & 0,1 & 0,0880 & 0,0005 \\ \hline
+            \end{tabular}
+        \end{center}
+    \subsubsection{Nồng độ dung dịch \ce{CH3COOH}}
+        \begin{equation}
+            C_{\ce{CH3COOH}} \cdot V_{\ce{CH3COOH}} = C_{\ce{NaOH}} \cdot V_{\ce{NaOH}}
+        \end{equation}
+        \begin{equation}
+            \left\{
+            \begin{aligned}
+                C_{\ce{CH3COOH}, 1} = \frac{C_{\ce{NaOH}} \cdot V_{\ce{NaOH}, 1}}{V_{\ce{CH3COOH}}} = \frac{0,1 \cdot 8,75}{10} = 0,0875N \\
+                C_{\ce{CH3COOH}, 2} = \frac{C_{\ce{NaOH}} \cdot V_{\ce{NaOH}, 2}}{V_{\ce{CH3COOH}}} = \frac{0,1 \cdot 8,70}{10} = 0,0870N \\
+                C_{\ce{CH3COOH}, 3} = \frac{C_{\ce{NaOH}} \cdot V_{\ce{NaOH}, 3}}{V_{\ce{CH3COOH}}} = \frac{0,1 \cdot 8,80}{10} = 0,0880N
+            \end{aligned}
+            \right.
+        \end{equation}
+    \subsubsection{Tính toán sai số}
+        \begin{equation}
+            \overline{C_{\ce{CH3COOH}}} = \frac{C_{\ce{CH3COOH}, 1} + C_{\ce{CH3COOH}, 2} + C_{\ce{CH3COOH}, 3}}{3} = \frac{0,0875 + 0,0870 + 0,0880}{3} = 0,0875N
+        \end{equation}
+        \begin{equation}
+            \left\{
+            \begin{aligned}
+                \Delta C_{\ce{CH3COOH}, 1} = |\overline{C_{\ce{CH3COOH}}} - C_{\ce{CH3COOH}, 1}| = |0,0875 - 0,0875| = 0,0000 \\
+                \Delta C_{\ce{CH3COOH}, 2} = |\overline{C_{\ce{CH3COOH}}} - C_{\ce{CH3COOH}, 2}| = |0,0875 - 0,0870| = 0,0005 \\
+                \Delta C_{\ce{CH3COOH}, 3} = |\overline{C_{\ce{CH3COOH}}} - C_{\ce{CH3COOH}, 3}| = |0,0875 - 0,0880| = 0,0005
+            \end{aligned}
+            \right.
+        \end{equation}
+        \begin{equation}
+            \begin{aligned}
+                \overline{\Delta C_{\ce{CH3COOH}}}
+                &= \frac{\Delta C_{\ce{CH3COOH}, 1} + \Delta C_{\ce{CH3COOH}, 2} + \Delta C_{\ce{CH3COOH}, 3}}{3} \\
+                &= \frac{0,0000 + 0,0005 + 0,0005}{3} = 0,00033
+            \end{aligned}
+        \end{equation}
+    \subsubsection{Kết luận:}
+    \begin{center}
+        Chỉ thị phù hợp với phép chuẩn độ acid yếu - base mạnh là \textbf{\PhenolphthaleinWord}
+    \end{center}
+    Nồng độ dung dịch \(\ce{CH3COOH}\) cần dùng:
+    \begin{equation}
+        C_{\ce{HCl}} = \overline{C_{\ce{CH3COOH}}} \pm \overline{\Delta C_{\ce{CH3COOH}}} = (0,0875 \pm 0,0003)\,N
+    \end{equation}
+
+\subsection{Thí nghiệm 4b: Chuẩn độ \(\ce{CH3COOH}\) với \MethylOrangeWord}
+    \subsubsection{Màu chỉ thị thay đổi:}
+        \begin{center}
+        \textit{Màu \ReddishOrangeWord{} chuyển sang màu \LightOrangeWord}
+        \end{center}
+    \subsubsection{Kết quả thí nghiệm}
+        \begin{center}
+            \renewcommand{\arraystretch}{1.3}
+            \begin{tabular}{|C{0.10\textwidth}|C{0.17\textwidth}|C{0.17\textwidth}|C{0.17\textwidth}|C{0.17\textwidth}|}
+                \hline
+                \textbf{Lần} & \shortstack{\(V_{\ce{CH3COOH}}\)\\(mL)} & \shortstack{\(V_{\ce{NaOH}}\)\\(mL)} & \shortstack{\(C_{\ce{NaOH}}\)\\(N)} & \shortstack{\(C_{\ce{CH3COOH}}\)\\(N)} \\ \hline
+                \textbf{1} & 10 & 1,3 & 0,1 & 0,0130 \\ \hline
+                \textbf{2} & 10 & 1,4 & 0,1 & 0,0140 \\ \hline
+            \end{tabular}
+        \end{center}
+    \subsubsection{Nồng độ dung dịch \ce{CH3COOH}}
+        \begin{equation}
+            C_{\ce{CH3COOH}} \cdot V_{\ce{CH3COOH}} = C_{\ce{NaOH}} \cdot V_{\ce{NaOH}}
+        \end{equation}
+        \begin{equation}
+            \left\{
+            \begin{aligned}
+                C_{\ce{CH3COOH}, 1} = \frac{C_{\ce{NaOH}} \cdot V_{\ce{NaOH}, 1}}{V_{\ce{CH3COOH}}} = \frac{0,1 \cdot 1,3}{10} = 0,0130N \\
+                C_{\ce{CH3COOH}, 2} = \frac{C_{\ce{NaOH}} \cdot V_{\ce{NaOH}, 2}}{V_{\ce{CH3COOH}}} = \frac{0,1 \cdot 1,4}{10} = 0,0140N
+            \end{aligned}
+            \right.
+        \end{equation}
+    \subsubsection{Nhận xét kết quả}
+        \begin{equation}
+            \overline{C_{\ce{CH3COOH}}} = \frac{C_{\ce{CH3COOH}, 1} + C_{\ce{CH3COOH}, 2}}{2} = \frac{0,0130 + 0,0140}{2} = 0,0135N
+        \end{equation}
+        \begin{enumerate}
+            \item Với chỉ hai lần thí nghiệm, việc tính sai số không có nhiều ý nghĩa thống kê nên không sử dụng để đánh giá độ tin cậy của phép đo.
+            \item Giá trị trung bình trên chỉ dùng để tham khảo. Do \MethylOrangeWord{} đổi màu trong vùng pH acid, không phù hợp với điểm tương đương của phép chuẩn độ acid yếu -- base mạnh, nên nồng độ tính được nhỏ hơn nhiều so với thí nghiệm 4a và không phản ánh đúng nồng độ thực của dung dịch \(\ce{CH3COOH}\).
+        \end{enumerate}
+    \subsubsection{Kết luận:}
+    \begin{center}
+        \MethylOrangeWord{} \textbf{không phù hợp} với phép chuẩn độ acid yếu -- base mạnh\\ Chỉ thị phù hợp hơn là \textbf{\PhenolphthaleinWord}.
+    \end{center}
+
+\section{Trả lời câu hỏi}
+
+\begin{enumerate}
+    \item \textbf{Thay đổi nồng độ \ce{HCl} và \ce{NaOH} có làm đổi dạng đường cong chuẩn độ \mbox{hay không? Tại sao?}}
+
+        Khi thay đổi nồng độ của \ce{HCl} và \ce{NaOH}, đường cong chuẩn độ không thay đổi về bản chất đối với hệ acid mạnh -- base mạnh, nhưng có thể thay đổi về độ dốc và vị trí theo trục thể tích. Quan hệ tại điểm tương đương vẫn tuân theo:
+        \begin{equation}
+            C_{\ce{NaOH}}V_{\ce{NaOH}} = C_{\ce{HCl}}V_{\ce{HCl}}
+        \end{equation}
+
+        Khi nồng độ ban đầu thay đổi, thể tích \ce{NaOH} cần dùng để đạt điểm tương đương cũng thay đổi, nên đường cong có thể bị kéo giãn hoặc thu hẹp theo trục thể tích. Tuy nhiên, điểm tương đương của phép chuẩn độ acid mạnh -- base mạnh vẫn nằm gần \(\mathrm{pH} = 7\), nên bản chất của đường cong không đổi.
+
+    \item \textbf{Giữa thí nghiệm 2 và 3, phép xác định nồng độ acid \ce{HCl} nào \mbox{chính xác hơn? Tại sao?}}
+
+        Việc xác định nồng độ \ce{HCl} trong thí nghiệm 2 cho kết quả chính xác hơn. Nguyên nhân là vì \PhenolphthaleinWord{} đổi màu từ không màu sang \LightPinkWord{} chỉ khi có một lượng rất nhỏ \ce{NaOH} dư, nên điểm cuối dễ nhận biết hơn.
+
+        Ngoài ra, khoảng đổi màu của \PhenolphthaleinWord{} nằm vào vùng pH kiềm nhẹ, gần phần bước nhảy pH của phép chuẩn độ acid mạnh -- base mạnh hơn so với \MethylOrangeWord{}. Vì vậy, kết quả thu được với \PhenolphthaleinWord{} đáng tin cậy hơn.
+
+    \item \textbf{Từ kết quả thí nghiệm 4, chỉ thị màu nào xác định acid acetic \mbox{chính xác hơn? Tại sao?}}
+
+        Đối với \ce{CH3COOH}, chỉ thị \PhenolphthaleinWord{} cho kết quả chính xác hơn \MethylOrangeWord{}. Do \ce{CH3COOH} là acid yếu nên điểm tương đương của phép chuẩn độ với \ce{NaOH} nằm ở môi trường kiềm, tức là có \(\mathrm{pH} > 7\).
+
+        Khoảng đổi màu của \PhenolphthaleinWord{} phù hợp hơn với vùng bước nhảy pH của hệ acid yếu -- base mạnh, trong khi khoảng đổi màu của \MethylOrangeWord{} \((\mathrm{pH} \approx 3,0 - 4,4)\) nằm ngoài vùng tương đương nên không cho kết quả chính xác.
+
+    \item \textbf{Trong phép phân tích thể tích, đổi vị trí \ce{NaOH} và acid có làm đổi kết quả không? \mbox{Tại sao?}}
+
+        Về lý thuyết, nếu đổi vị trí của \ce{NaOH} và acid thì kết quả tính toán cuối cùng không thay đổi, vì bản chất phản ứng vẫn là phản ứng trung hòa và tỉ lượng phản ứng không đổi.
+
+        Tuy nhiên, thể tích đọc trên burette và mức độ thuận tiện khi quan sát điểm cuối có thể khác nhau đôi chút tùy cách bố trí thí nghiệm. Do đó, về nguyên tắc kết quả không đổi, còn sai khác nếu có chủ yếu đến từ thao tác thực nghiệm.
+\end{enumerate}

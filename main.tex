@@ -1,0 +1,43 @@
+\documentclass[a4paper,11pt]{report}
+
+\input{misc/packages}
+\input{misc/chapter-format}
+\input{misc/paragraph-format}
+\input{misc/document-info}
+\input{misc/page-style}
+
+\newcommand{\BKBackgroundLogo}{%
+    \put(0,0){%
+        \parbox[b][\paperheight]{\paperwidth}{%
+            \vfill
+            \centering
+            \includegraphics[width=0.52\paperwidth]{assets/HCMUT_Logo_watermark.png}%
+            \vfill
+        }%
+    }%
+}
+
+
+\begin{document}
+
+\input{chapters/titlepage}
+
+\AddToShipoutPictureBG{\BKBackgroundLogo}
+
+\begingroup
+\setcounter{tocdepth}{2}
+\setlength{\parskip}{0pt}
+\tableofcontents
+\endgroup
+
+\input{chapters/Openning}
+
+\input{chapters/Chapter_1}
+
+\input{chapters/Chapter_2}
+
+\input{chapters/Chapter_3}
+
+\input{chapters/Closing}
+
+\end{document}

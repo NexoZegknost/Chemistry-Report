@@ -1,0 +1,205 @@
+\setcounter{chapter}{1}
+\chapter{Nhiệt phản ứng}
+
+\section{Tiến hành thí nghiệm}
+
+\subsection{Thí nghiệm 1: Xác định nhiệt dung của nhiệt lượng kế}
+    \subsubsection{Công thức tính \(\mathbf{m_0c_0}\):}
+        \begin{equation}
+            m_0 \cdot c_0=m\cdot c \cdot\frac{(T_3-T_1)-(T_2-T_3)}{T_2-T_3}
+        \end{equation}
+        Trong đó:
+        \begin{itemize}
+            \item \(\mathbf{m} = \rho \cdot V = 1 \cdot 50 = 50 (\si{\gram}) \) là khối lượng của 50 \si{\milli\liter} nước.
+            \item \(\mathbf{c} = 1 \left(\frac{\si{\calorie}}{\si{\gram} \cdot \si{\kelvin}} \right) \) là nhiệt dung riêng của nước.
+        \end{itemize}
+    \subsubsection{Kết quả thí nghiệm:}
+        \begin{center}
+            \begin{tabular}{|C{0.25\textwidth}|C{0.6\textwidth}|}
+                \hline
+                Nhiệt độ & Giá trị \\ \hline
+                \(T_1\) (\si{\celsius}) & \textit{30} \\ \hline
+                \(T_2\) (\si{\celsius}) & \textit{58} \\ \hline
+                \(T_3\) (\si{\celsius}) & 45 \\ \hline
+                \(m_0c_0 (\si{\calorie} / \si{\kelvin})\) & 7,692 \\ \hline
+            \end{tabular}
+        \end{center}
+    \subsubsection{Kết quả tính \(\mathbf{m_0c_0}\):}
+        Quy đổi về đơn vị chuẩn Kelvin theo công thức \(T(\si{\kelvin}) = t(\si{\celsius}) + 273,15\):
+        \begin{equation}
+            \begin{aligned}
+                T_1 &= 30 + 273,15 = 303,15 (\si{\kelvin}),\\
+                T_2 &= 58 + 273,15 = 331,15 (\si{\kelvin}),\\
+                T_3 &= 45 + 273,15 = 318,15 (\si{\kelvin})
+            \end{aligned}
+        \end{equation}
+        Vì biểu thức chỉ chứa hiệu nhiệt độ nên độ chênh lệch theo \si{\kelvin} và theo \si{\celsius} có cùng giá trị số.
+        \begin{equation}
+            \begin{aligned}
+                m_0 \cdot c_0 &= m\cdot c \cdot\frac{(T_3-T_1)-(T_2-T_3)}{T_2-T_3} \\
+                &= 50 \cdot 1 \cdot \frac{(318,15-303,15)-(331,15-318,15)}{331,15-318,15} \\
+                &= 7,692 (\si{\calorie} / \si{\kelvin})
+            \end{aligned}
+        \end{equation}
+
+\subsection{Thí nghiệm 2: Hiệu ứng nhiệt của phản ứng trung hòa}
+    \subsubsection{Phương trình phản ứng:}
+        \[ \ce{NaOH + HCl -> NaCl + H2O} \]
+    \subsubsection{Kết quả thí nghiệm:}
+        \begin{center}
+            \begin{tabular}{|C{0.25\textwidth}|C{0.6\textwidth}|}
+                \hline
+                Nhiệt độ & Giá trị \\ \hline
+                \(T_1\) (\si{\celsius}) & 30 \\ \hline
+                \(T_2\) (\si{\celsius}) & 30 \\ \hline
+                \(T_3\) (\si{\celsius}) & 35 \\ \hline
+                \(Q\)(\si{\calorie}) & 293,46 \\ \hline
+                \(\Delta H\)(\si{\calorie / \mol}) & -11738,4 \\ \hline
+            \end{tabular}
+        \end{center}
+    \subsubsection{Tính toán \(\mathbf{Q}\) và \(\mathbf{\Delta H}\):}
+        Quy đổi về đơn vị chuẩn Kelvin theo công thức \(T(\si{\kelvin}) = t(\si{\celsius}) + 273,15\):
+        \begin{equation}
+            \begin{aligned}
+                T_1 &= 30 + 273,15 = 303,15 (\si{\kelvin}),\\
+                T_2 &= 30 + 273,15 = 303,15 (\si{\kelvin}),\\
+                T_3 &= 35 + 273,15 = 308,15 (\si{\kelvin})
+            \end{aligned}
+        \end{equation}
+        Vì công thức chỉ phụ thuộc vào độ biến thiên nhiệt độ nên \(\Delta T\) theo \si{\kelvin} và theo \si{\celsius} có cùng giá trị số.
+        \begin{equation}
+            \begin{aligned}
+                Q &= (m_0c_0 + m_{\ce{NaCl}}c_{\ce{NaCl}}) \cdot \left(T_3 - \frac{T_1+T_2}{2}\right) \\
+                &= \left(7{,}692 + 51 \cdot 1\right) \cdot \left(308,15 - \frac{303,15+303,15}{2}\right) \\
+                &= 293,46 (\si{\calorie})
+            \end{aligned}
+        \end{equation}
+        Trong đó:
+        \begin{itemize}
+            \item \(m_0c_0 = 7,692 (\si{\calorie} / \si{\kelvin}) \) là nhiệt dung của nhiệt lượng kế
+            \item \( m_{\ce{NaCl}} = \rho_{\ce{NaCl}} \cdot V_{\ce{NaCl}} = 1,02 \cdot 50 = 51 (\si{\gram}) \) là khối lượng dung dịch muối
+            \item \(c_{\ce{NaCl}}=1 \left(\frac{\si{\calorie}}{\si{\gram} \cdot \si{\kelvin}} \right)\) là nhiệt dung riêng của dung dịch muối
+        \end{itemize}
+        \begin{equation}
+            n_{\ce{NaCl}} = C_{M} \cdot V_{\ce{NaCl}} = 0,5 \cdot 0,05 = 0,025 (\si{\mole})
+        \end{equation}
+        \begin{equation}
+            \Delta H = - \frac{Q}{n_{\ce{NaCl}}} = - \frac{293,46}{0,025} = -11738,4 (\si{\calorie} / \si{\mole})
+        \end{equation}
+    \subsubsection{Kết luận:}
+        Với kết quả \(\Delta H = -11738,4 < 0\) nên phản ứng \textbf{tỏa nhiệt} với nhiệt lượng: \begin{equation}
+            Q = 293,46 (\si{\calorie})
+        \end{equation}
+
+\subsection{Thí nghiệm 3: Nhiệt hòa tan của \(\ce{CuSO4}\)}
+    \subsubsection{Kết quả thí nghiệm:}
+
+    \begin{center}
+        \begin{tabular}{|C{0.25\textwidth}|C{0.6\textwidth}|}
+            \hline
+            Đại lượng & Giá trị \\ \hline
+            \(T_1\) (\si{\celsius}) & 30 \\ \hline
+            \(T_2\) (\si{\celsius}) & \textit{34,5} \\ \hline
+            \(m_{\ce{CuSO4}} \)(\si{\gram}) & 4,00 \\ \hline
+            \(Q\)(\si{\calorie}) & 277,614 \\ \hline
+            \(\Delta H\)(\si{\calorie / \mol}) & -11104,56 \\ \hline
+        \end{tabular}
+    \end{center}
+
+    \subsubsection{Tính toán \(\mathbf{Q}\) và \(\mathbf{\Delta H}\):}
+        Quy đổi về đơn vị chuẩn Kelvin theo công thức \(T(\si{\kelvin}) = t(\si{\celsius}) + 273,15\):
+        \begin{equation}
+            \begin{aligned}
+                T_1 &= 30 + 273,15 = 303,15 (\si{\kelvin}),\\
+                T_2 &= 34,5 + 273,15 = 307,65 (\si{\kelvin})
+            \end{aligned}
+        \end{equation}
+        Vì công thức chỉ phụ thuộc vào độ biến thiên nhiệt độ nên \(\Delta T\) theo \si{\kelvin} và theo \si{\celsius} có cùng giá trị số.
+        \begin{equation}
+            \begin{aligned}
+                Q &= (m_0c_0 + m_{\text{dd }\ce{CuSO4}}c_{\text{dd }\ce{CuSO4}}) \cdot (T_2 - T_1) \\
+                &= (7{,}692 + 54 \cdot 1) \cdot (307,65 - 303,15) \\
+                &= 277{,}614 (\si{\calorie})
+            \end{aligned}
+        \end{equation}
+        Trong đó:
+        \begin{itemize}
+            \item \(m_0c_0 = 7,692 (\si{\calorie} / \si{\kelvin})\) là nhiệt dung của nhiệt lượng kế.
+            \item \(m_{\text{dd }\ce{CuSO4}} = m_{\ce{H2O}} + m_{\ce{CuSO4}} = 50 + 4 = 54 (\si{\gram})\) là khối lượng dung dịch sau khi hòa tan.
+            \item \(c_{\text{dd }\ce{CuSO4}} = 1 \left(\frac{\si{\calorie}}{\si{\gram} \cdot \si{\kelvin}}\right)\) là nhiệt dung riêng gần đúng của dung dịch.
+        \end{itemize}
+        \begin{equation}
+            n_{\ce{CuSO4}} = \frac{m_{\ce{CuSO4}}}{M_{\ce{CuSO4}}} = \frac{4,00}{160} = 0,025 (\si{\mole})
+        \end{equation}
+        \begin{equation}
+            \Delta H = - \frac{Q}{n_{\ce{CuSO4}}} = - \frac{277{,}614}{0,025} = -11104{,}56 (\si{\calorie} / \si{\mole})
+        \end{equation}
+    \subsubsection{Kết luận:}
+        Với kết quả \(\Delta H = -11104,56 < 0\) nên quá trình hòa tan \(\ce{CuSO4}\) là quá trình \textbf{tỏa nhiệt} với:
+        \begin{equation}
+            Q = 277,614 (\si{\calorie})
+        \end{equation}
+
+\section{Trả lời câu hỏi}
+
+\begin{enumerate}
+    \item \textbf{\(\Delta H_{\mathrm{th}}\) của phản ứng \(\ce{HCl + NaOH -> NaCl + H2O}\) sẽ được tính theo số mol \ce{HCl} hay \ce{NaOH} khi cho \SI{25}{\milli\liter} dung dịch \ce{HCl} \SI{2}{M} tác dụng với \SI{25}{\milli\liter} dung dịch \ce{NaOH} \SI{1}{M}? Tại sao?}
+
+        Ta có:
+        \begin{equation}
+            \begin{aligned}
+                n_{\ce{NaOH}} &= 1 \cdot 0,025 = 0,025\ (\si{\mole}), \\
+                n_{\ce{HCl}} &= 2 \cdot 0,025 = 0,050\ (\si{\mole}).
+            \end{aligned}
+        \end{equation}
+
+        Phản ứng xảy ra theo tỉ lệ mol \(1:1\):
+        \begin{equation}
+            \ce{HCl + NaOH -> NaCl + H2O}
+        \end{equation}
+
+        Vì \(n_{\ce{NaOH}} = 0,025\ \si{\mole} < n_{\ce{HCl}} = 0,050\ \si{\mole}\), \ce{NaOH} là chất giới hạn, còn \ce{HCl} dư. Do đó, \(\Delta H_{\mathrm{th}}\) của phản ứng phải được tính theo số mol \ce{NaOH} đã phản ứng, tức là theo \(0,025\ \si{\mole}\). Phần \ce{HCl} dư không tham gia phản ứng nên không dùng để tính nhiệt phản ứng.
+
+    \item \textbf{Nếu thay dung dịch \ce{HCl} \SI{1}{M} bằng dung dịch \ce{HNO3} \SI{1}{M} thì kết quả thí nghiệm 2 có thay đổi hay không?}
+
+        Nếu thay \ce{HCl} bằng \ce{HNO3} thì kết quả thí nghiệm 2 hầu như không thay đổi đáng kể. Nguyên nhân là vì cả \ce{HCl} và \ce{HNO3} đều là acid mạnh, phân li gần như hoàn toàn trong nước:
+        \begin{equation}
+            \ce{HCl -> H+ + Cl-}
+        \end{equation}
+        \begin{equation}
+            \ce{HNO3 -> H+ + NO3-}
+        \end{equation}
+
+        Trong cả hai trường hợp, bản chất của phản ứng trung hòa với base mạnh đều là:
+        \begin{equation}
+            \ce{H+ + OH- -> H2O}
+        \end{equation}
+
+        Vì vậy, nhiệt hiệu ứng của phản ứng trung hòa gần như giống nhau. Nếu có sai khác thì chủ yếu là do sai số thực nghiệm nhỏ.
+
+    \item \textbf{Tính \(\Delta H_3\) bằng lý thuyết theo định luật Hess. So sánh với kết quả thí nghiệm. Theo em sai số nào là quan trọng nhất? Còn nguyên nhân nào khác không?}
+
+        Theo định luật Hess:
+        \begin{equation}
+            \Delta H_3 = \Delta H_1 + \Delta H_2 = -18,7 + 2,8 = -15,9\,\text{kcal/mol}
+        \end{equation}
+
+        So với số liệu thực nghiệm trong báo cáo:
+        \begin{equation}
+            \Delta H_{3,\text{TN}} = -11104,56\ \left(\frac{\si{\calorie}}{\si{\mole}}\right) \approx -11,10\,\text{kcal/mol}
+        \end{equation}
+
+        Như vậy, giá trị thực nghiệm lệch so với giá trị lý thuyết.
+
+        Theo em, nguyên nhân gây sai số quan trọng nhất là \ce{CuSO4} khan bị hút ẩm. Chất này rất dễ hấp thụ hơi nước trong không khí, làm cho mẫu không còn hoàn toàn khan; vì vậy khối lượng chất đem thí nghiệm không còn chính xác, kéo theo nhiệt lượng đo được và giá trị \(\Delta H\) bị sai lệch.
+
+        Một số nguyên nhân khác có thể kể đến là:
+        \begin{itemize}
+            \item Nhiệt lượng kế không cách nhiệt hoàn toàn nên có sự thất thoát nhiệt ra môi trường.
+            \item Sai số của nhiệt kế khi đo nhiệt độ.
+            \item Sai số khi đong thể tích dung dịch.
+            \item Sai số của cân khi cân hóa chất.
+            \item Việc giả sử nhiệt dung riêng của dung dịch hoặc của \ce{CuSO4} bằng \(1\ \si{\calorie} / (\si{\gram} \cdot \si{\celsius})\) chỉ là gần đúng.
+            \item \ce{CuSO4} có thể chưa tan hoàn toàn, làm cho nhiệt hòa tan thu được nhỏ hơn giá trị thực tế.
+        \end{itemize}
+\end{enumerate}

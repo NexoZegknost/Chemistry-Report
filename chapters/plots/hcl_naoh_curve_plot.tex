@@ -1,0 +1,59 @@
+\begingroup
+\begin{tikzpicture}
+    \begin{axis}[
+        scale only axis,
+        width=0.70\textwidth,
+        height=0.70\textwidth,
+        axis equal image,
+        xlabel={$V_{\ce{NaOH}}$ (mL)},
+        ylabel={pH},
+        xmin=0,
+        xmax=14,
+        ymin=0,
+        ymax=14,
+        xtick={0,2,4,6,8,10,12,14},
+        ytick={0,2,4,6,8,10,12,14},
+        grid=both,
+        major grid style={gray!35},
+        minor grid style={gray!15},
+        legend style={draw=none, font=\small, at={(0.98,0.03)}, anchor=south east},
+        tick label style={font=\small},
+        label style={font=\small},
+        title style={font=\small},
+    ]
+        \addplot[
+            color=blue!70!black,
+            line width=1.2pt,
+            mark=*,
+            mark size=1.6pt,
+            visualization depends on={value \thisrow{pH} \as \phvalue},
+            nodes near coords={\pgfmathprintnumber[precision=2,use comma,1000 sep={}]{\phvalue}},
+            every node near coord/.append style={
+                font=\tiny,
+                fill=white,
+                fill opacity=0.85,
+                text opacity=1,
+                inner sep=1pt,
+                anchor=south west,
+                xshift=1pt,
+                yshift=1pt,
+                rotate=30,
+            },
+        ] table[x=VNaOH,y=pH,col sep=comma] {assets/hcl_naoh_titration_data.csv};
+        \addlegendentry{Số liệu thực nghiệm}
+
+        \addplot[
+            red,
+            line width=1.5pt,
+        ] coordinates {(9.8,2) (9.8,12)};
+        \addlegendentry{Bước nhảy pH}
+
+        \addplot[
+            green!50!black,
+            dashed,
+            line width=1pt,
+        ] coordinates {(0,7) (14,7)};
+        \addlegendentry{$\mathrm{pH}=7$}
+    \end{axis}
+\end{tikzpicture}%
+\endgroup
